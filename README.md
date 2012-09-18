@@ -10,8 +10,6 @@ Stealing from the philosphy of Markdown readability is paramount; the final prod
 # Blocks
 ---------
 
-Indentation (outside of list items) delineates a block section. Adding a `~` (tilde) will define code; with an optional language extension immediately following.
-
 
 ## Block-quotes
 
@@ -26,7 +24,7 @@ Indentation (outside of list items) delineates a block section. Adding a `~` (ti
 
 The code following the two back-tick characters will be added as the classname of the `code` element.
 
-    ``<code declaration>
+    ```<code declaration>
     var myVar = "awesome";
 
     function describe (addition) {
@@ -34,7 +32,7 @@ The code following the two back-tick characters will be added as the classname o
     }
 
     describe(myVar);
-    ``<code declaration>
+    ```
 
 
 ## Headings
@@ -56,7 +54,7 @@ Of course there is the distinct possibility that someone will 'accidentally' cre
 These should fail silently to an h6 tag...? Let's not create invalid markup for no reason.
 
 
-## Horizontal Rule (<hr />)
+## Horizontal Rule (`<hr />`)
 
 A line that contains only `-` (dash, minus) characters - any number more than one - will be translated as a `<hr />`.
 
@@ -93,11 +91,11 @@ Any line that does not fall into any of the other rules should - most-likely - f
 
 Use the same syntax as code, excluding the code declaration portion.
 
-    ``
+    ```
     This should be
     rendered as
     three lines of text.
-    ``
+    ```
 
 
 ## Tables
@@ -144,6 +142,8 @@ The square-bracket syntax might seem a little bulky but it will allow for spaces
     [[link:http://link.to/page|text|title]]
     or
     [[http://link.to/page|text|title]]
+    even
+    http://link.to/page
 
 
 ### Footnote links - future feature?

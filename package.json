@@ -1,0 +1,10 @@
+{
+  "name": "terse"
+, "description": "A syntax for defining markup; similar to wikisyntax and markdown."
+, "version": "0.0.1"
+, "main": "lib/terse.js"
+, "dependancies": {}
+, "devDependancies": {
+    "mocha": ">=1.4*"
+  }
+}
