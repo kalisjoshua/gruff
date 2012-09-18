@@ -3,6 +3,7 @@
 
 var
   assert = require("chai").assert
+, fs = require("fs")
 , terse  = require("../lib/terse");
 
 describe("Terse", function () {
