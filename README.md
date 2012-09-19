@@ -82,6 +82,10 @@ Most of the beauty of HTML ordered lists is that they don't have an explicit ord
     # A numeric
     # list.
 
+    - Description List (title)
+    + title description
+    + another description item
+
 ## Paragraphs
 
 Any line that does not fall into any of the other rules should - most-likely - fall into a paragraph role.

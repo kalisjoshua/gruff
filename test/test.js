@@ -1,10 +1,28 @@
 /*jshint laxcomma:true strict:false*/
-/*globals describe it module require*/
+/*globals __dirname describe it module require*/
 
 var
   assert = require("chai").assert
 , fs = require("fs")
 , terse  = require("../lib/terse");
+
+function doozer (tag) {
+  var
+    act = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".terse").toString()).toHTML()
+  , exp = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString();
+
+  return function () {
+    assert.equal(act, exp);
+  };
+}
+
+function loopio (tags) {
+    Object.keys(tags).forEach(function (node) {
+      node[0] === "?"
+        ? it(node.slice(1))
+        : it(node, doozer(tags[node]));
+    });
+}
 
 describe("Terse", function () {
   it("should exist", function () {
@@ -13,69 +31,35 @@ describe("Terse", function () {
 
   describe("Block-level Elements", function () {
 
-    describe("- Blockquote", function () {
-      
-    });
-
-    describe("- Code", function () {
-      
-    });
-
-    describe("- Heading", function () {
-      
-    });
-
-    describe("- Horizontal Rule", function () {
-      
-    });
-
-    describe("- Image", function () {
-
-    });
-
-    describe("- List", function () {
-
-    });
-
-    describe("- Paragraph", function () {
-
-    });
-
-    describe("- Pre(formatted text)", function () {
-
-    });
-
-    describe("- Table", function () {
-      it("Should eventually be implemented");
-    });
+    loopio({
+        "Blockquote"         : "blockquote"
+      , "Code block"         : "code"
+      , "Heading"            : "heading"
+      , "Horizontal Rule"    : "hr"
+      , "Image"              : "img"
+      , "Descriptive List"   : "dl"
+      , "Ordered List"       : "ol"
+      , "Unordered List"     : "ul"
+      , "Paragraph"          : "p"
+      , "Pre-formatted text" : "pre"
+      , "?Table"              : "table"
+      });
     
   });
 
   describe("In-line Elements", function () {
 
-    describe("- Bold", function () {
-
-    });
-
-    describe("- Code", function () {
-
-    });
-
-    describe("- Image", function () {
-
-    });
-
-    describe("- Italic", function () {
-
-    });
-
-    describe("- Link", function () {
-
-    });
-
-    describe("- Su(b/per)script", function () {
-
-    });
+    loopio({
+        "?Bold"         : "b"
+      , "?Code inline"  : "code-inline"
+      // , "?Emphasis"     : "em"
+      , "?Image"        : "img"
+      , "?Italic"       : "i"
+      , "?Link"         : "a"
+      // , "?Strong"       : "strong"
+      , "?Subscript"    : "sub"
+      , "?Superscript"  : "sup"
+      });
 
   });
 });
