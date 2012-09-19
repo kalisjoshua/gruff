@@ -8,11 +8,16 @@ var
 
 function doozer (tag) {
   var
-    act = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".terse").toString()).toHTML()
-  , exp = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString();
+    output = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".terse").toString()).toHTML()
+  , sample = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString()
+  , tok = terse.tokenizer;
+
+  // sample = tok(tok(sample, true), false);
+  // console.log(output);
+  // console.log(sample);
 
   return function () {
-    assert.equal(act, exp);
+    assert.strictEqual(output, sample);
   };
 }
 
@@ -36,12 +41,12 @@ describe("Terse", function () {
       , "blockquote"  : "Blockquote"
       , "code"        : "Code block"
       , "heading"     : "Heading"
-      , "hr"          : "?Horizontal Rule"
+      , "hr"          : "Horizontal Rule"
       , "img"         : "?Image"
       , "dl"          : "?Descriptive List"
       , "ol"          : "?Ordered List"
       , "ul"          : "?Unordered List"
-      , "p"           : "?Paragraph"
+      , "p"           : "Paragraph"
       , "pre"         : "Pre-formatted text"
       , "table"       : "?Table"
       });
