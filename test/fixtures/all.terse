@@ -1,0 +1,54 @@
+= Top Heading
+
+First paragraph.
+
+A very long paragraph will have many `characters` init. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nulla augue, sit amet sollicitudin ligula. Nullam pellentesque ante eu mi vehicula vel varius tortor lacinia. Maecenas eu aliquam arcu. Vivamus elementum metus ac nulla mollis sed tristique leo ullamcorper. Proin ultrices lacus sit amet risus vestibulum venenatis. Phasellus non congue metus. Nulla ultrices ornare metus. Praesent commodo egestas turpis. Nulla facilisis lectus non urna suscipit ornare.
+Extra space between paragraphs will be optional.
+If people like having then bunched together it will still work fine.
+
+== List Heading
+
+* A simple
+* list
+* will only have
+* one level
+
+=== Descriptive List Heading
+
+- Happy
++ characterized by or indicative of pleasure, contentment, or joy.
++ favored by fortune; fortunate or lucky
++ apt or felicitous as actions, utterances, or ideas
+
+==== This is the wrong Heading level
+
+# in order
+# the steps
+# taken are
+# yet to be
+# defined
+
+===== One more Heading
+
+```
+The Tao that can be spoken
+is not the eternal Tao.
+
+The name that can be named
+is not the eternal name.
+
+The nameless
+is the origin of Heaven and Earth.
+
+The named
+is the mother of myriad things.
+
+...
+```
+====== Blockquote Heading
+
+    "When the world knows beauty as beauty, ugliness arises" ~ Tao Te Ching - Lao Tzu
+---
+    "Deleted code is debugged code." ~ Jeff Sickel
+
+--- anything after the horizontal rule should be ignored
