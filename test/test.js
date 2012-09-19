@@ -18,9 +18,9 @@ function doozer (tag) {
 
 function loopio (tags) {
     Object.keys(tags).forEach(function (node) {
-      node[0] === "?"
-        ? it(node.slice(1))
-        : it(node, doozer(tags[node]));
+      tags[node][0] === "?"
+        ? it(tags[node])
+        : it(tags[node], doozer(node));
     });
 }
 
@@ -32,17 +32,18 @@ describe("Terse", function () {
   describe("Block-level Elements", function () {
 
     loopio({
-        "Blockquote"         : "blockquote"
-      , "Code block"         : "code"
-      , "Heading"            : "heading"
-      , "Horizontal Rule"    : "hr"
-      , "Image"              : "img"
-      , "Descriptive List"   : "dl"
-      , "Ordered List"       : "ol"
-      , "Unordered List"     : "ul"
-      , "Paragraph"          : "p"
-      , "Pre-formatted text" : "pre"
-      , "?Table"              : "table"
+        "all"         : "?Mixed bag of elements"
+      , "blockquote"  : "Blockquote"
+      , "code"        : "Code block"
+      , "heading"     : "Heading"
+      , "hr"          : "?Horizontal Rule"
+      , "img"         : "?Image"
+      , "dl"          : "?Descriptive List"
+      , "ol"          : "?Ordered List"
+      , "ul"          : "?Unordered List"
+      , "p"           : "?Paragraph"
+      , "pre"         : "Pre-formatted text"
+      , "table"       : "?Table"
       });
     
   });
@@ -50,15 +51,15 @@ describe("Terse", function () {
   describe("In-line Elements", function () {
 
     loopio({
-        "?Bold"         : "b"
-      , "?Code inline"  : "code-inline"
-      // , "?Emphasis"     : "em"
-      , "?Image"        : "img"
-      , "?Italic"       : "i"
-      , "?Link"         : "a"
-      // , "?Strong"       : "strong"
-      , "?Subscript"    : "sub"
-      , "?Superscript"  : "sup"
+        "b"       : "?Bold"
+      , "codelet" : "?Code inline"
+      , "em"      : "?Emphasis"
+      , "img"     : "?Image"
+      , "i"       : "?Italic"
+      , "a"       : "?Link"
+      , "strong"  : "?Strong"
+      , "sub"     : "?Subscript"
+      , "sup"     : "?Superscript"
       });
 
   });
