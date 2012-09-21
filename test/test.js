@@ -17,7 +17,8 @@ function doozer (tag) {
   // console.log(sample);
 
   return function () {
-    assert.strictEqual(output, sample);
+    // assert.equal(output, sample);
+    assert.strictEqual(sample, output);
   };
 }
 
@@ -44,8 +45,9 @@ describe("Terse", function () {
       , "hr"          : "Horizontal Rule"
       , "img"         : "?Image"
       , "dl"          : "?Descriptive List"
-      , "ol"          : "?Ordered List"
-      , "ul"          : "?Unordered List"
+      , "ol"          : "Ordered List"
+      , "ol-nested"   : "Ordered List - Nested"
+      , "ul"          : "Unordered List"
       , "p"           : "Paragraph"
       , "pre"         : "Pre-formatted text"
       , "table"       : "?Table"
