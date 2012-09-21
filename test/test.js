@@ -38,6 +38,7 @@ describe("Terse", function () {
   describe("Block-level Elements", function () {
 
     loopio({
+      // filename        description
         "all"         : "?Mixed bag of elements"
       , "blockquote"  : "Blockquote"
       , "code"        : "Code block"
@@ -58,15 +59,16 @@ describe("Terse", function () {
   describe("In-line Elements", function () {
 
     loopio({
-        "b"       : "?Bold"
-      , "codelet" : "?Code inline"
-      , "em"      : "?Emphasis"
-      , "img"     : "?Image"
-      , "i"       : "?Italic"
-      , "a"       : "?Link"
-      , "strong"  : "?Strong"
-      , "sub"     : "?Subscript"
-      , "sup"     : "?Superscript"
+      // filename        description
+        "b"           : "?Bold"
+      , "codelet"     : "?Code inline"
+      , "em"          : "?Emphasis"
+      , "img"         : "?Image"
+      , "i"           : "?Italic"
+      , "a"           : "?Link"
+      , "strong"      : "?Strong"
+      , "sub"         : "?Subscript"
+      , "sup"         : "?Superscript"
       });
 
   });
