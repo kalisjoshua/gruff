@@ -44,7 +44,7 @@ describe("Terse", function () {
       , "code"        : "Code block"
       , "heading"     : "Heading"
       , "hr"          : "Horizontal Rule"
-      , "img"         : "?Image"
+      , "img"         : "Image"
       , "dl"          : "?Descriptive List"
       , "ol"          : "Ordered List"
       , "ol-nested"   : "Ordered List - Nested"
