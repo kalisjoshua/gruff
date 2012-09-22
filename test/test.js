@@ -8,9 +8,8 @@ var
 
 function doozer (tag) {
   var
-    output = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".terse").toString()).toHTML()
-  , sample = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString()
-  , tok = terse.tokenizer;
+    output = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".terse").toString())
+  , sample = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString();
 
   return function () {
     // assert.equal(output, sample);
