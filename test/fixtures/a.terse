@@ -1,0 +1,9 @@
+Lorem ipsum [[dolor]] site amet.
+Lorem ipsum [[dolor|]] site amet.
+Lorem ipsum [[dolor|other]] site amet.
+Lorem ipsum [[dolor|other|]] site amet.
+Lorem ipsum [[dolor|other with spaces|title]] site amet.
+Lorem ipsum [[dolor|other with spaces|title with spaces]] site amet.
+Lorem ipsum [[dolor|other with spaces|title with spaces|]] site amet.
+Lorem ipsum [[dolor|other with spaces|title with spaces|classnames]] site amet.
+Lorem ipsum [[link:dolor|other with spaces|title with spaces|any number of classes]] site amet.

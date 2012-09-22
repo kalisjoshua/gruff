@@ -58,11 +58,11 @@ describe("Terse", function () {
       // filename        description
         "codelet"     : "Code inline"
       , "em"          : "Emphasis"
-      , "img-inline"  : "?Image"
-      , "a"           : "?Link"
+      , "img-inline"  : "Image inline"
+      , "a"           : "Link"
       , "strong"      : "Strong"
-      , "sub"         : "?Subscript"
-      , "sup"         : "?Superscript"
+      , "sub"         : "Subscript"
+      , "sup"         : "Superscript"
       });
 
   });
