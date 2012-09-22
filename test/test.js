@@ -12,13 +12,9 @@ function doozer (tag) {
   , sample = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString()
   , tok = terse.tokenizer;
 
-  // sample = tok(tok(sample, true), false);
-  // console.log(output);
-  // console.log(sample);
-
   return function () {
-    assert.equal(output, sample);
-    // assert.strictEqual(sample, output);
+    // assert.equal(output, sample);
+    assert.strictEqual(sample, output);
   };
 }
 
@@ -60,11 +56,9 @@ describe("Terse", function () {
 
     loopio({
       // filename        description
-        "b"           : "?Bold"
-      , "codelet"     : "Code inline"
+        "codelet"     : "Code inline"
       , "em"          : "Emphasis"
       , "img-inline"  : "?Image"
-      , "i"           : "?Italic"
       , "a"           : "?Link"
       , "strong"      : "Strong"
       , "sub"         : "?Subscript"
