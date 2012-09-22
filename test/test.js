@@ -17,8 +17,8 @@ function doozer (tag) {
   // console.log(sample);
 
   return function () {
-    // assert.equal(output, sample);
-    assert.strictEqual(sample, output);
+    assert.equal(output, sample);
+    // assert.strictEqual(sample, output);
   };
 }
 
@@ -61,12 +61,12 @@ describe("Terse", function () {
     loopio({
       // filename        description
         "b"           : "?Bold"
-      , "codelet"     : "?Code inline"
-      , "em"          : "?Emphasis"
-      , "img"         : "?Image"
+      , "codelet"     : "Code inline"
+      , "em"          : "Emphasis"
+      , "img-inline"  : "?Image"
       , "i"           : "?Italic"
       , "a"           : "?Link"
-      , "strong"      : "?Strong"
+      , "strong"      : "Strong"
       , "sub"         : "?Subscript"
       , "sup"         : "?Superscript"
       });
