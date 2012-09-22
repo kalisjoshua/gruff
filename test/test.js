@@ -34,13 +34,13 @@ describe("Terse", function () {
 
     loopio({
       // filename        description
-        "all"         : "?Mixed bag of elements"
+        "all"         : "Mixed bag of elements"
       , "blockquote"  : "Blockquote"
       , "code"        : "Code block"
       , "heading"     : "Heading"
       , "hr"          : "Horizontal Rule"
       , "img"         : "Image"
-      , "dl"          : "?Descriptive List"
+      , "dl"          : "Descriptive List"
       , "ol"          : "Ordered List"
       , "ol-nested"   : "Ordered List - Nested"
       , "ul"          : "Unordered List"

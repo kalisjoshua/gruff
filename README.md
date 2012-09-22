@@ -82,9 +82,9 @@ Most of the beauty of HTML ordered lists is that they don't have an explicit ord
     # A numeric
     # list.
 
-    - Description List (title)
-    + title description
-    + another description item
+    ? Description List (title)
+    : title description
+    : another description item
 
 ## Paragraphs
 
