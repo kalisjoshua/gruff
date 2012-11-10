@@ -2,6 +2,10 @@
   "name": "gruff"
 , "description": "A syntax for defining markup; similar to wikisyntax and markdown."
 , "version": "1.0.0"
+, "repository": {
+    "type": "git",
+    "url": "https://github.com/kalisjoshua/gruff.git"
+  }
 , "main": "lib/gruff.js"
 , "dependencies": {}
 , "devDependencies": {
