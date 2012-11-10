@@ -12,7 +12,7 @@ function doozer (tag) {
   , sample = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString();
 
   return function () {
-    // assert.equal(output, sample);
+    assert.equal(output, sample);
     assert.strictEqual(sample, output);
   };
 }
