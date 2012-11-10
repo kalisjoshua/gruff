@@ -4,7 +4,7 @@
 var
   assert = require("chai").assert
 , fs = require("fs")
-, terse  = require("../lib/terse");
+, terse  = require("../lib/gruff");
 
 function doozer (tag) {
   var

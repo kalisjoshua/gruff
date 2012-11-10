@@ -1,8 +1,8 @@
 {
-  "name": "terse"
+  "name": "gruff"
 , "description": "A syntax for defining markup; similar to wikisyntax and markdown."
 , "version": "1.0.0"
-, "main": "lib/terse.js"
+, "main": "lib/gruff.js"
 , "dependencies": {}
 , "devDependencies": {
     "chai": ">=1.3"
