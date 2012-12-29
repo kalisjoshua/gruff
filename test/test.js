@@ -55,7 +55,8 @@ describe("Terse", function () {
 
     loopio({
       // filename        description
-        "codelet"     : "Code inline"
+        "abbr"        : "Abbreviation"
+      , "codelet"     : "Code inline"
       , "em"          : "Emphasis"
       , "img-inline"  : "Image inline"
       , "a"           : "Link"
