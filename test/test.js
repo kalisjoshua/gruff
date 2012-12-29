@@ -8,7 +8,7 @@ var
 
 function doozer (tag) {
   var
-    output = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".terse").toString())
+    output = terse(fs.readFileSync(__dirname + "/fixtures/" + tag + ".gruff").toString())
   , sample = fs.readFileSync(__dirname + "/fixtures/" + tag + ".html").toString();
 
   return function () {
