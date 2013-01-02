@@ -1,4 +1,4 @@
-terse
+Gruff
 =====
 
 A syntax for defining how to markup a document; similar to wiki-syntax and markdown.
