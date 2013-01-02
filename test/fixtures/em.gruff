@@ -1,1 +1,6 @@
 Lorem ipsum //dolor// sit amet.
+URL http://google.com
+```js
+// this is a comment in code
+var a = 1; // comment at end of line
+```

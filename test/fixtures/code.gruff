@@ -1,3 +1,7 @@
 ```js
-var myVar = "awesome";
+(function () {
+  var myVar = "awesome";
+
+  function hidden () {}
+}());
 ```
