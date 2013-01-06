@@ -14,4 +14,6 @@ link at the end of a paragraph http://link.to/1
 
 http://link.to/2
 
+[[http://link.to/3]]
+
 Mail link [[mailto:me@localhost|me@localhost]]
