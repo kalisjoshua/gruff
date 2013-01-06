@@ -10,8 +10,8 @@ Lorem ipsum [[link:dolor|other with spaces|title with spaces|any number of class
 
 Lorem ipsum http://link.to/image.png dolor sit amet.
 
-link at the end of a paragraph http://link.to
+link at the end of a paragraph http://link.to/1
 
-http://link.to
+http://link.to/2
 
 Mail link [[mailto:me@localhost|me@localhost]]
