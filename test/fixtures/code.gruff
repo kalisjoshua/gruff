@@ -2,6 +2,11 @@
 (function () {
   var myVar = "awesome";
 
-  function hidden () {}
+  // this is a comment and not a 'em'
+  function hidden () {} // end of line comment
+
+  if (true) {
+    always.execute();
+  }
 }());
 ```

@@ -39,6 +39,7 @@ The format portion of the block - following the initial three back-ticks - will 
     describe(myVar);
     ```
 
+A known issue is that end-of-line comments will need to have a space after `//` to not mix them up with `em` syntax.
 
 ## Headings
 
