@@ -1,7 +1,7 @@
 {
   "name": "gruff"
 , "description": "A syntax for defining markup; similar to wikisyntax and markdown."
-, "version": "1.2.1"
+, "version": "1.2.2"
 , "repository": {
     "type": "git",
     "url": "https://github.com/kalisjoshua/gruff.git"
