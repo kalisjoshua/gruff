@@ -1,6 +1,8 @@
 ```js
 (function () {
-  var myVar = "awesome";
+  var myVar = "awesome"
+    , url1 = "http://link.to/1"
+    , url2 = 'http://link.to/2';
 
   // this is a comment and not a 'em'
   function hidden () {} // end of line comment
